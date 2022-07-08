@@ -128,7 +128,7 @@ The application `app_motor` has been added in addition to the existing  applicat
 <img src="images/wbz451_core_setup.png" width=480>
 </p>
 
-The FreeRTOS task `APP_MOTOR_Tasks` is managing the stepper motor by starting the motor (in `app_motor.c`) when desired state is triggered either via BLE control (in `app_ble_sensor.c`) or either via Zigbee cluster event handler (in `app_zigbee_handler.c`) and stopping the motor by de-energizing the coil when the garage door has reached the position of one of the switches.
+The FreeRTOS task `APP_MOTOR_Tasks` is managing the stepper motor by starting the motor (in `app_motor.c`) when desired state is triggered either via BLE control over `APP_TRPS_Sensor_LED_Ctrl()` (in `app_ble_sensor.c`) or either via Zigbee cluster event handler over `Cluster_Event_Handler()` (in `app_zigbee_handler.c`) and stopping the motor by de-energizing the coil when the garage door has reached the position of one of the switches.
 
 ## 6. Run the demo<a name="step6"></a>
 
@@ -145,6 +145,21 @@ The FreeRTOS task `APP_MOTOR_Tasks` is managing the stepper motor by starting th
 <p align="center">
 <img src="images/wbz451_garage_door_opener_front_view.png" width=240>
 <img src="images/wbz451_garage_door_opener_top_view.png" width=240>
+</p>
+
+
+### Control the demo over BLE
+
+<p align="center">
+<img src="images/wbz451_control_over_ble.gif" width=520>
+</p>
+
+
+### Control the demo with Alexa over Zigbee
+
+
+<p align="center">
+<img src="images/wbz451_control_over_zigbee.gif" width=520>
 </p>
 
 

@@ -48,5 +48,7 @@ With this Smart Garage Door Opener demo from Microchip, the user has the ability
    1. [Software Setup](02_ble_zigbee_solution/README.md#step4)
    1. [Harmony Configuration](02_ble_zigbee_solution/README.md#step5)
    1. [Run the demo](02_ble_zigbee_solution/README.md#step6)
+
+
 <a href="#top">Back to top</a>
 
